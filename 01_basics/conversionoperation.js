@@ -25,6 +25,21 @@
 // "" => false
 // "Kunal" => true
 
-let value = 3;
-let negValue = -value
-console.log(negValue);
+// *********************** Operations*******************************
+
+
+// let value = 3;
+// let negValue = -value;
+// console.log(negValue);
+
+// let str1 = "Hello"
+// let str2 = " Kunal"
+
+// // console.log(str1 + str2);
+// let str3 = str1 + str2;
+// console.log(str3)
+
+// console.log(true);
+
+
+
