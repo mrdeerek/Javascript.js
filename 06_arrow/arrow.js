@@ -42,7 +42,7 @@ const chai = () => {  // bas arrow function itna me hi work karta hai (=>)
 // console.log(addTwo(3,5));
 
 //or
-// const addTwo = (num1, num2) => num1 + num2 //()bracket use karenge toh return use nahi karna padega
+// const addTwo = (num1, num2) => num1 + num2 //() ye bracket use karenge toh return use nahi karna padega
 
 // console.log(addTwo(3,5));
 
