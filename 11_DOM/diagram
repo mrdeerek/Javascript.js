@@ -1,0 +1,126 @@
+// DIAGRAM OF DOM
+      
+            WINDOW
+               |
+           DOCUMENT
+               |
+              HTML
+        1)                               2)
+        HEAD                             bODY
+        1)             2)                 |
+       TITLE          META               div --> attribute
+         |              |    attribute<--1)h1           2)h2
+        text node      attributes           |              |
+                                          text node      text node
+
+
+
+notes  
+
+//getElementById
+
+document.getElementById('title').id
+'title'
+
+document.getElementById('title').getAttribute('id')
+'title'
+
+document.getElementById('title').getAttribute('class')
+'heading'
+
+title.style.backgroundColor = 'green'
+'green'
+
+title.style.backgroundColor = 'pink'
+'pink'
+
+title.style.padding = '15px'
+'15px'
+
+title.style.borderRadius = '15px'
+'15px'
+
+//for taking text
+
+title.innerText
+'DOM learning on Chai code'
+
+title.textContent
+'DOM learning on Chai code test text'
+
+// for querySelector
+//this all come under node list
+
+document.querySelector('h2')
+<h2>​Lorem ipsum dolor sit.​</h2>​
+
+document.querySelector('title')
+<title>​DOM learning​</title>​
+
+document.querySelector('#title')
+<h1 id=​"title" class=​"heading">​…​</h1>​
+
+document.querySelector('.heading')
+<h1 id=​"title" class=​"heading">​…​</h1>​
+
+document.querySelector('input[type="password"]')
+null
+
+document.querySelector('first-child')
+null
+
+const turnGreen = myul.querySelector('li')
+undefined
+
+turnGreen.style.backgroundColor = "red"
+'red'
+
+
+const turnBlue = myul.querySelector('li')
+undefined
+
+turnBlue.style.backgroundColor = ('blue')
+'blue'
+
+turnBlue.style.pdding = "10px"
+'10px'
+turnBlue.innerText = 'five'
+'five'
+
+// for change color of element.
+
+const tempList = document.querySelectorAll('li')
+undefined
+
+tempList
+NodeList(3) [li, li, li]
+
+tempList.style.color = 'red'
+VM398:1 Uncaught TypeError: Cannot set properties of undefined (setting 'color')
+    at <anonymous>:1:22
+(anonymous) @ VM398:1Understand this errorAI
+
+tempList[0].style.color = 'red'
+'red'
+
+document.querySelectorAll('h1')
+NodeList [h1#title.heading]0: h1#title.headinglength: 1[[Prototype]]: NodeList
+
+const myH1 = document.querySelectorAll('h1')
+undefined
+
+myH1
+NodeList [h1#title.heading]
+
+myH1.style.color = 'yellow'
+VM1000:1 Uncaught TypeError: Cannot set properties of undefined (setting 'color')
+    at <anonymous>:1:18
+(anonymous) @ VM1000:1Understand this errorAI
+
+myh1[0].style.color = 'yellow'
+VM1094:1 Uncaught ReferenceError: myh1 is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM1094:1Understand this errorAI
+
+myH1[0].style.color = 'yellow'
+'yellow'
